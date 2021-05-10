@@ -1,0 +1,266 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, .main_view_wrapper{
+	height: 100%;
+	margin: 0;
+}
+.page_wrap.celebrity{
+	font-family: "Noto Sans CJK JP","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	padding: 0;
+}
+.page_wrap.celebrity::after{
+	overflow: hidden;
+}
+.icon_from{
+	width: 43px;
+	height: 43px;
+	background-image: url(../images/list/from.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	float: left;
+	margin-right: 15px;
+}
+.celeb_interview {
+	position: relative;
+	height: 100%;
+	padding: 0;
+	font-family: "Noto Sans CJK JP","Helvetica","MS PGothic", sans-serif;
+	color: #000;
+	background-color: #fff;
+	overflow: hidden;
+}
+.main_view_wrapper {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background-image: url(../images/design.png);
+	/* background-position: center; */
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.mv_top_row,  .mv_bottom_row{
+	z-index: 1;
+}
+.mv_middle_row{
+	height: 68vh;
+}
+.mv_bottom_row{
+	flex:2;
+	display: flex;
+}
+.mv_logo {
+	display: flex;
+	padding: 30px 26px 27px 27px;
+}
+.mv_logo .mv_logo_right{
+	margin-left: auto;
+}
+.mv_caption {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+.mv_caption_dtl {
+	max-width: 735px;
+	margin-top: auto;
+}
+.mv_caption_dtl img {
+	margin-bottom: 30px;
+}
+.mv_caption_dtl figcaption{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 34px;
+}
+.mv_social_links {
+	position: relative;
+	flex: 0 0 240px;
+	min-height: 100%;
+}
+.mv_social_links ul{
+	position: absolute;
+	bottom: 0;
+	padding: 5px 3px 29px;
+}
+.mv_social_links ul li{
+	display: inline-block;
+	margin-left: 27px;
+}
+
+/* List Page */
+.celeb_interview_list, .celeb_interview_inner {
+	overflow: auto;
+}
+.celeb_interview_list .main_view_wrapper,
+.celeb_interview_inner .main_view_wrapper{
+	background-image: none;
+	margin-bottom: 118px;
+}
+.celeb_interview_list .mv_middle_row {
+	height: 77vh;
+}
+.mv_info_wrap{
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+.mv_info_bg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+.mv_info_bg img{
+	width: 100%;
+}
+.mv_info_content{
+	width: 530px;
+	margin-top: auto;
+	margin-right: 205px;
+	z-index: 1;
+}
+.mv_info_content a{
+	width: 440px;
+	height: 68px;
+	display: inline-block;
+	background-color: #000;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 68px;
+	text-align: center;
+}
+.mv_info_content h1{
+	font-family: Helvetica;
+	font-size: 102.61px;
+	letter-spacing: -5px;
+}
+.mv_info_content h1 span{
+	font-size: 37.78px;
+	color: #ed870f;
+	letter-spacing: 0;
+	display: block;
+	margin-top: -15px;
+	margin-bottom: -30px;
+}
+.mv_info_content h1 small{
+	font-size: 36.05px;
+	letter-spacing: 0;
+}
+.mv_info_content p{
+	font-size: 12.66px;
+	margin: -5px 0 42px;
+	line-height: 20px;
+}
+.mv_info_content p strong{
+	font-size: 20.57px;
+}
+.card_container{
+	width: 1138px;
+	margin: 0 auto;
+	font-weight: bold;
+}
+.featured_list, .card_list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.featured_list .card{
+	width: 542px;
+	margin: 0 4px 104px;
+}
+.card_list .card{
+	width: 183px;
+	margin: 0 4px 57px;
+}
+.card a{
+	color: #000;
+}
+.card .figure_img{
+	position: relative;
+}
+.card .figure_img p {
+	position: absolute;
+	left: 2px;
+	bottom: 0;
+	font-size: 60.55px;
+	line-height: 60.55px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: -3px;
+}
+.card figcaption h2{
+	font-size: 19px;
+	line-height: 20px;
+	text-transform: uppercase;
+	margin: 12px 0 10px;
+}
+.card figcaption span{
+	display: block;
+	font-size: 25.64px;
+	margin-bottom: 10px;
+}
+.card figcaption p{
+	font-size: 14px;
+}
+
+/* Inner  Page*/
+.celeb_interview_inner .mv_middle_row {
+	height: 85vh;
+}
+.mv_info_wrap.inner {
+	justify-content: center;
+}
+.mv_info_wrap.inner .mv_info_bg{
+	padding: 63px 78px 62px 78px;
+}
+.mv_info_wrap.inner .mv_info_content {
+	width: auto;
+	margin-right: 0;
+}
+.mv_info_wrap.inner .mv_info_content h1{
+	font-size: 78.45px;
+}
+.mv_info_wrap.inner .mv_info_content h1 span{
+	font-size: 22.9px;
+}
+.mv_info_wrap.inner .mv_info_content h1 small{
+	font-size: 36.05px
+}
+.mv_info_wrap.inner .mv_info_content p{
+	font-size: 16px;
+	line-height: 34px;
+	margin-bottom: 0;
+}
+.content_box.inner {
+	width: 776px;
+	margin: 0 auto;
+}
+.content_box.inner figure img{
+	max-width: 100%;
+    display: block;
+    margin: 8rem auto 5rem;
+}
+.content_box.inner dl dt {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-top: 2px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+	color: #ed870f;
+}
+.content_box.inner dl dt::before {
+    content: "\2014 \00A0";
+	font-size: 2.2rem;
+    letter-spacing: -1px;
+}
+.content_box.inner dl dd {
+    font-size: 1.6rem;
+	font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 34px;
+	color: #092846;
+}
